@@ -100,7 +100,7 @@ var result = tasks.reduce(function (accumulator, current) {
         return duration * 50;
         //reduce to find the total of the list items of the operation
     }).reduce(function (accumulator, current) {
-        return [(+accumulator) + (+current)];//reverse csting as string
+        return [(+accumulator) + (+current)];//reverse casting as string
         //coerce into dollar with decimal places
     }).map(function (dollar_amount) {
         return '£' + dollar_amount.toFixed(2);
